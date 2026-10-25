@@ -71,7 +71,7 @@ class Mention extends Model
      *
      * @return void
      */
-    public static function pool(Model $model = null)
+    public static function pool(?Model $model = null)
     {
         $model = is_null($model) ? $this : $model;
         $name = get_class($model);
